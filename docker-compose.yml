@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./models:/app/models
+      - ./house_predictions.db:/app/house_predictions.db
+    environment:
+      - DATABASE_URL=sqlite:///house_predictions.db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./Front-End
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://localhost:8001
+    volumes:
+      - ./Front-End/src:/app/src
+      - ./Front-End/public:/app/public
+
+networks:
+  default:
+    driver: bridge 

@@ -176,4 +176,52 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Thanks to all contributors who have helped shape this project
-- Special thanks to the open-source community for the tools and libraries used 
+- Special thanks to the open-source community for the tools and libraries used
+
+## 🐳 Docker Setup
+
+### Prerequisites
+- Docker
+- Docker Compose
+
+### Quick Start with Docker
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/lazybrownass/House-Price-Predictor.git
+   cd House-Price-Predictor
+   ```
+
+2. **Build and run with Docker Compose**
+   ```bash
+   docker-compose up --build
+   ```
+
+   This will:
+   - Build the backend and frontend containers
+   - Start the services
+   - Make the application available at:
+     - Frontend: http://localhost:5173
+     - Backend API: http://localhost:8001
+
+3. **Stop the application**
+   ```bash
+   docker-compose down
+   ```
+
+### Docker Development
+
+- Frontend code changes will automatically reload due to volume mounting
+- Backend changes require container restart:
+  ```bash
+  docker-compose restart backend
+  ```
+
+### Docker Production Deployment
+
+For production deployment, modify the environment variables in `docker-compose.yml`:
+```yaml
+environment:
+  - NODE_ENV=production
+  - API_URL=https://your-api-domain.com
+``` 
