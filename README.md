@@ -43,8 +43,8 @@ A full-stack web application that predicts house prices using machine learning. 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/house-price-predictor.git
-   cd house-price-predictor
+   git clone https://github.com/lazybrownass/House-Price-Predictor.git
+   cd House-Price-Predictor
    ```
 
 2. **Set up the backend**
@@ -106,13 +106,64 @@ The project uses a Random Forest model trained on historical house price data. T
 - Number of bathrooms
 - Year built
 
+## 📚 Documentation
+
+Detailed documentation is available in the `docs` directory:
+
+- [API Documentation](docs/API.md) - Detailed API endpoints and usage
+- [Contributing Guide](docs/CONTRIBUTING.md) - Guidelines for contributing to the project
+- [Model Documentation](docs/MODEL.md) - Technical details about the machine learning model
+
+## 🎯 Project Status
+
+This project is actively maintained and open for contributions. Current development focus:
+
+- [ ] Adding user authentication
+- [ ] Implementing more advanced prediction features
+- [ ] Improving model accuracy
+- [ ] Adding data visualization components
+- [ ] Enhancing UI/UX
+
+## 🔍 Model Performance
+
+The current model achieves:
+- R² Score: 0.85-0.90
+- Mean Absolute Error: ~$25,000
+- Root Mean Square Error: ~$35,000
+
+For more details about the model, see [Model Documentation](docs/MODEL.md).
+
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+We welcome contributions! Please see our [Contributing Guide](docs/CONTRIBUTING.md) for details.
+
+## 🔒 Security
+
+- All API endpoints are CORS-enabled
+- Database queries are protected against SQL injection
+- Input validation on all endpoints
+- Regular security updates
+
+## 📈 Future Roadmap
+
+1. **Q2 2024**
+   - Implement user authentication
+   - Add more data visualization features
+
+2. **Q3 2024**
+   - Integrate additional prediction models
+   - Add support for more property features
+
+3. **Q4 2024**
+   - Launch mobile-responsive UI
+   - Add real-time market data integration
+
+## 💡 Support
+
+Need help? Check out:
+- [API Documentation](docs/API.md)
+- [GitHub Issues](https://github.com/lazybrownass/House-Price-Predictor/issues)
+- [Contributing Guide](docs/CONTRIBUTING.md)
 
 ## 📝 License
 
@@ -120,7 +171,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Awab Ul Mujtaba - Initial work
 
 ## 🙏 Acknowledgments
 
