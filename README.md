@@ -146,15 +146,15 @@ We welcome contributions! Please see our [Contributing Guide](docs/CONTRIBUTING.
 
 ## 📈 Future Roadmap
 
-1. **Q2 2024**
+1. **Q2 2025**
    - Implement user authentication
    - Add more data visualization features
 
-2. **Q3 2024**
+2. **Q3 2025**
    - Integrate additional prediction models
    - Add support for more property features
 
-3. **Q4 2024**
+3. **Q4 2025**
    - Launch mobile-responsive UI
    - Add real-time market data integration
 
